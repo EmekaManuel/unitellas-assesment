@@ -1,0 +1,45 @@
+.table {
+  padding-top: 10px;
+
+  .row-name {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+
+  .activity {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+    .activity-icon {
+      font-size: 40px;
+      display: flex;
+      align-items: center;
+      &.blue {
+        color: blue;
+      }
+      &.green {
+        color: green;
+      }
+      &.orange {
+        color: orange;
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    .activity {
+      gap: 3px;
+
+      .activity-icon {
+        font-size: 30px;
+      }
+    }
+  }
+}

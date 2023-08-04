@@ -1,0 +1,86 @@
+.home {
+  display: flex;
+  overflow-y: auto;
+}
+
+.sidebar {
+  flex: 1;
+  width: 100px;
+  padding: 25px;
+  display: flex;
+  align-items: center;
+  max-width: fit-content;
+  height: 100vh;
+  overflow-y: scroll;
+  flex-direction: column;
+  flex-grow: 1; /* Allow homeContainer to grow to fill available space */
+
+  min-width: 0; /* Allow flex items to shrink beyond their content width */
+}
+
+.homeContainer {
+  flex: 3;
+  display: flex;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  overflow-y: scroll;
+  padding: 30px 30px 0 30px;
+  flex-direction: column;
+  flex-grow: 1;
+  min-width: 0;
+  border-left: 1px solid rgb(81, 81, 81);
+  border-right: 1px solid rgb(81, 81, 81);
+
+  .navbar {
+    flex: 0 0 auto;
+  }
+
+  .widgets {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    min-width: 0;
+    border-bottom: 1px solid rgb(101, 101, 101);
+    border-top: 1px solid rgb(101, 101, 101);
+  }
+
+  .chart {
+    height: 100%;
+    flex: 2;
+    min-width: 0;
+  }
+
+  .transactions {
+    margin-top: 30px;
+    flex: 1;
+    margin-bottom: 40px;
+  }
+}
+
+.menubar {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  width: 400px;
+  max-width: fit-content;
+  min-width: 0;
+}
+
+@media (max-width: 768px) {
+  .home {
+    flex-direction: column;
+  }
+
+  .sidebar,
+  .menubar {
+    order: 1;
+  }
+
+  .homeContainer {
+    order: 2;
+  }
+}

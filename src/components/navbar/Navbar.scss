@@ -1,0 +1,47 @@
+.navbar {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  .top-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    .username {
+      font-size: 36px;
+      text-align: center;
+    }
+
+    .date {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      gap: 5px;
+      font-size: 16px;
+    }
+  }
+
+  .description {
+    font-size: 18px;
+    text-align: start;
+    color: gray;
+  }
+
+  @media (max-width: 768px) {
+    .top-section {
+      .username {
+        font-size: 24px;
+      }
+
+      .date {
+        font-size: 14px;
+      }
+    }
+
+    .description {
+      font-size: 16px;
+    }
+  }
+}

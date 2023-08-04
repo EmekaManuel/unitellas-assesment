@@ -1,0 +1,60 @@
+.widget {
+  display: flex;
+  align-items: left;
+  justify-content: start;
+  margin: 0 auto;
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    .icon-container {
+      height: 50px;
+      width: 50px;
+      background-color: rgb(220, 217, 217);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .icon {
+        font-size: 40px;
+      }
+    }
+
+    .icon {
+      font-size: 40px;
+    }
+
+    .bottomSection {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      .statistics {
+        font-size: 13px;
+        display: flex;
+        flex-direction: row;
+        justify-items: end;
+        align-items: center;
+        gap: 5px;
+
+        .numberValue {
+          font-size: 20px;
+          font-weight: bold;
+        }
+
+        .changes {
+          &.positive {
+            color: green;
+            font-size: 20px;
+          }
+          &.negative {
+            color: red;
+            font-size: 20px;
+          }
+        }
+      }
+    }
+  }
+}
