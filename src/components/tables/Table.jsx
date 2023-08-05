@@ -41,59 +41,59 @@ function createData(name, calories, fat, carbs, protein) {
 const rows = [
   createData(
     <span className="row-name">
-      <span>
+      <span className="icon-container blue">
         <RateReviewIcon />
       </span>
-      <span>Product Review For US Market</span>
+      <span className="text">Product Review For US Market</span>
     </span>,
     <span className="activity">
       <span className="activity-icon orange">•</span>
-      <span>in progress</span>
+      <span className="text">in progress</span>
     </span>,
     <span className="activity">
       <span className="activity-icon">
         <WatchLaterIcon fontSize="small" />
       </span>
-      <span>8h</span>
+      <span className="text">8h</span>
     </span>,
     "•••"
   ),
 
   createData(
     <span className="row-name">
-      <span>
+      <span className="icon-container orange">
         <SearchIcon />
       </span>
-      <span>Search Gross Income For US Market</span>
+      <span className="text">Search Gross Income For US Market</span>
     </span>,
     <span className="activity">
       <span className="activity-icon blue">•</span>
-      <span>on hold</span>
+      <span className="text">on hold</span>
     </span>,
     <span className="activity">
       <span className="activity-icon">
         <WatchLaterIcon fontSize="small" />
       </span>
-      <span>8h</span>
+      <span className="text">8h</span>
     </span>,
     "•••"
   ),
   createData(
     <span className="row-name">
-      <span>
+      <span className="icon-container grey">
         <GitHubIcon />
       </span>
-      <span> Review Manuel Code </span>
+      <span className="text"> Review Manuel Code </span>
     </span>,
     <span className="activity">
       <span className="activity-icon green">•</span>
-      <span>passed</span>
+      <span className="text">passed</span>
     </span>,
     <span className="activity">
       <span className="activity-icon">
         <WatchLaterIcon fontSize="small" />
       </span>
-      <span>8h</span>
+      <span className="text">8h</span>
     </span>,
     "•••"
   ),

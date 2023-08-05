@@ -1,10 +1,33 @@
 .table {
   padding-top: 10px;
+  .text {
+    font-size: 18px;
+  }
 
   .row-name {
     display: flex;
     align-items: center;
     gap: 10px;
+
+    .icon-container {
+      height: 20px;
+      width: 20px;
+      padding: 10px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      &.blue {
+        background-color: rgb(159, 159, 255);
+      }
+      &.orange {
+        background-color: rgb(255, 210, 125);
+      }
+      &.grey {
+        background-color: rgb(216, 216, 216);
+      }
+    }
 
     @media (max-width: 768px) {
       flex-direction: column;

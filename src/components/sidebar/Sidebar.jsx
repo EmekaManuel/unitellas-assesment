@@ -10,7 +10,7 @@ const Sidebar = () => {
   return (
     <div className="sidebar">
       <div className="top">
-        <span className="logo">logip</span>
+        <span className="logo">Unitellas</span>
       </div>
       <div className="start">
         <div className="top">
@@ -43,9 +43,14 @@ const Sidebar = () => {
             </li>
           </ul>
         </div>
-        {/* <div className="center">
-          <span>Upgrade to Pro</span>
-        </div> */}
+        <div className="center">
+          <span className="box-title">Upgrade to Pro</span>
+          <span className="box-text">
+            Get 1 month free <br />
+            and unlock
+          </span>
+          <button className="box-btn">Upgrade</button>
+        </div>
         <div className="bottom">
           <li>
             <HelpCenterIcon className="icon" />

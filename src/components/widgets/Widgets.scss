@@ -31,6 +31,10 @@
       display: flex;
       flex-direction: column;
       gap: 5px;
+
+      .title {
+        font-size: 25px;
+      }
       .statistics {
         font-size: 13px;
         display: flex;

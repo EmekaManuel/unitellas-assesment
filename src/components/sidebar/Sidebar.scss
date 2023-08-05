@@ -1,11 +1,19 @@
 .sidebar {
   display: flex;
+  height: 100vh;
+  display: flex;
   flex-direction: column;
+  gap: 20px;
+  overflow-y: scroll;
+  padding: 30px 30px 0 30px;
+  flex-direction: column;
+  // flex-grow: 1;
+  // min-width: 0;
 
   .top {
     display: flex;
     align-items: left;
-    margin-bottom: 10px;
+    // margin-bottom: 10px;
 
     .logo {
       font-size: 20px;
@@ -62,8 +70,34 @@
   }
   .center {
     display: flex;
-    align-items: start;
+    gap: 10px;
+    width: max-content;
+    align-items: center;
     flex-direction: column;
+    background-color: #f1f1fd;
+    padding: 30px;
+    border-radius: 30px;
+
+    .box-title {
+      font-size: 20px;
+      font-weight: bold;
+    }
+    .box-text {
+      display: flex;
+      align-items: center;
+      text-align: center;
+    }
+    .box-btn {
+      padding: 10px;
+      background-color: #a19cff;
+      border: none;
+      outline: none;
+      display: flex;
+      border-radius: 15px;
+      font-size: 14px;
+      align-items: center;
+      text-align: center;
+    }
   }
   .bottom {
     display: flex;
